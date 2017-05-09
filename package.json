@@ -9,6 +9,7 @@
   "author": "Paul Primus",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.1",
     "bootstrap": "^3.3.7",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

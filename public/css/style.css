@@ -1,5 +1,6 @@
 
 html, body {
+
 	height: 100%;
 	font-size: 10px;
 }
@@ -8,6 +9,7 @@ html, body {
 	height: 100%;
 }
 .app {
+	font-family:  Verdana, "sans-serif", Arial;
 	width: 100%;
 	height: calc(100vh);
 	background-color: #FFF8E1; 
@@ -30,5 +32,11 @@ html, body {
 }
 .app  .app-container .main-area {
 	width: 85%;
-	padding: 1%;
+	padding: 2%;
+}
+
+.app .app-container .main-area .header1 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 2em;
 }

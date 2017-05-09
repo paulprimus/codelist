@@ -1,6 +1,6 @@
 {
 	"schluessel_gruppen": [
-		{"id": 1, "gruppe": "vkz"},
-		{"id": 2, "gruppe": "fkz"}
+		{"id": 1, "gruppe": "vkz", "bezeichnung": "Vorkommenskennzeichen", "beschreibung":"Kennzeichen wird gesetzt wenn Ident von anderen System gehalten wird"},
+		{"id": 2, "gruppe": "fkz", "bezeichnung": "Fachkennzeichen", "beschreibung":"Kennzeichen wird Aufgrund von Kriterien des Idents gesetzt"}
 	]
 }

@@ -2,6 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SideBar from '../views/side-bar';
+import GruppenContainer from '../container/gruppen-container';
+
 
 export default function() {
 	return (
@@ -13,7 +15,7 @@ export default function() {
 					<SideBar/>		
 				</div>
 				<div className="main-area">			
-					<h1> Schluesselwartung </h1>
+					<GruppenContainer/>
 				</div>
 			</div>
 		</div>
