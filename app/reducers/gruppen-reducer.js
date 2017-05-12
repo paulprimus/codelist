@@ -10,7 +10,7 @@ const gruppenReducer = function(state = initialState, action) {
     switch(action.type) {
 
         case types.GET_GRUPPEN:
-            return Object.assign({}, state, {gruppenState: action.gruppen});
+            return Object.assign({}, state, {gruppen: action.gruppen});
   }
 
   return state;

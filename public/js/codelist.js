@@ -11096,7 +11096,7 @@ var GruppenContainer = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(_gruppen2.default, this.props.sg);
+            return _react2.default.createElement(_gruppen2.default, this.props);
         }
     }]);
 
@@ -11105,7 +11105,7 @@ var GruppenContainer = function (_React$Component) {
 
 var mapStateToProps = function mapStateToProps(store) {
     return {
-        sg: store.gruppenState
+        sg: store.gruppenState.gruppen
     };
 };
 
@@ -11175,6 +11175,10 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = function (props) {
 	console.log(props);
+	var gruppen = [];
+	if (props.sg !== undefined) {
+		gruppen = props.sg;
+	}
 	return _react2.default.createElement(
 		'div',
 		null,
@@ -11216,6 +11220,36 @@ exports.default = function (props) {
 							'Beschreibung'
 						)
 					)
+				),
+				_react2.default.createElement(
+					'tbody',
+					null,
+					gruppen.map(function (gruppe) {
+						return _react2.default.createElement(
+							'tr',
+							null,
+							_react2.default.createElement(
+								'td',
+								null,
+								gruppe.id
+							),
+							_react2.default.createElement(
+								'td',
+								null,
+								gruppe.gruppe
+							),
+							_react2.default.createElement(
+								'td',
+								null,
+								gruppe.bezeichnung
+							),
+							_react2.default.createElement(
+								'td',
+								null,
+								gruppe.beschreibung
+							)
+						);
+					})
 				)
 			)
 		)
@@ -11313,7 +11347,7 @@ var gruppenReducer = function gruppenReducer() {
   switch (action.type) {
 
     case types.GET_GRUPPEN:
-      return Object.assign({}, state, { gruppenState: action.gruppen });
+      return Object.assign({}, state, { gruppen: action.gruppen });
   }
 
   return state;

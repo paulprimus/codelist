@@ -13,14 +13,14 @@ class GruppenContainer extends React.Component {
     
     render() {
         return (
-            <Gruppen {...this.props.sg}  />
+            <Gruppen {...this.props}  />
         );
     }
 }
 
 const mapStateToProps = function(store) {
     return {
-        sg: store.gruppenState
+        sg: store.gruppenState.gruppen
     };
 };
 

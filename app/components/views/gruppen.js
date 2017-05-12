@@ -4,6 +4,10 @@ import ReactDOM from 'react-dom';
 
 export default function(props) {
 	console.log(props);
+	let gruppen = [];
+	if (props.sg !== undefined) {
+		gruppen = props.sg;
+	}
 	return (
 		<div>
 				
@@ -19,6 +23,18 @@ export default function(props) {
 						<th>Beschreibung</th>
 					</tr>
 					</thead>
+					<tbody>
+					{gruppen.map(gruppe => {
+						return (
+						<tr>
+							<td>{gruppe.id}</td>
+							<td>{gruppe.gruppe}</td>
+							<td>{gruppe.bezeichnung}</td>
+							<td>{gruppe.beschreibung}</td>
+						</tr>
+						);
+					})}
+					</tbody>
 				</table>
 			</div>
 		</div>
