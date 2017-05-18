@@ -1,6 +1,8 @@
 {
 	"schluessel_gruppen": [
 		{"id": 1, "gruppe": "vkz", "bezeichnung": "Vorkommenskennzeichen", "beschreibung":"Kennzeichen wird gesetzt wenn Ident von anderen System gehalten wird"},
-		{"id": 2, "gruppe": "fkz", "bezeichnung": "Fachkennzeichen", "beschreibung":"Kennzeichen wird Aufgrund von Kriterien des Idents gesetzt"}
+		{"id": 2, "gruppe": "fkz", "bezeichnung": "Fachkennzeichen", "beschreibung":"Kennzeichen wird Aufgrund von Kriterien des Idents gesetzt"},
+		{"id": 3, "gruppe": "rechtstatsache", "bezeichnung": "rechtstatsache", "beschreibung":"Blablabla"},
+		{"id": 4, "gruppe": "Organe", "bezeichnung": "Organe", "beschreibung":"Kennzeichen wird Aufgrund von Kriterien des Idents gesetzt"}
 	]
 }
