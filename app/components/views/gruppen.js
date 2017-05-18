@@ -37,7 +37,16 @@ export default function(props) {
 					</tbody>
 				</table>
 			</div>
+			<div className="aktion-controls">
+				<ul className ="pager">   
+                    <li className="next menu-item"><Link to="/gruppen/neu" >&larr; Zurück</Link></li> 
+                </ul>
+				<button type="button" className="btn btn-success" onClick={handleBtnNeuClick}>Neu</button>
+			</div>
 		</div>
 	);
 }
 
+function handleBtnNeuClick() {
+	console.log("klick!");
+}
