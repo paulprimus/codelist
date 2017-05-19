@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
+import { Link, Router } from 'react-router-dom';
 
 export default function(props) {
 	console.log(props);
@@ -25,9 +25,9 @@ export default function(props) {
 					</tr>
 					</thead>
 					<tbody>
-					{gruppen.map(gruppe => {
+					{gruppen.map((gruppe, index) => {
 						return (
-						<tr>
+						<tr key={index}>
 							<td>{gruppe.id}</td>
 							<td>{gruppe.gruppe}</td>
 							<td>{gruppe.bezeichnung}</td>
@@ -40,10 +40,11 @@ export default function(props) {
 			</div>
 			<div className="aktion-controls">
 				<ul className ="pager">   
-                    <li className="next menu-item"><Link to="/gruppen/neu" >&larr; Zurück</Link></li> 
+                    <li className="next menu-item"><Link to="/gruppen/neu" >Neu</Link></li> 
                 </ul>
-				<button type="button" className="btn btn-success" onClick={handleBtnNeuClick}>Neu</button>
 			</div>
+
+		
 		</div>
 	);
 }

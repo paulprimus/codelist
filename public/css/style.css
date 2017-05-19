@@ -42,5 +42,6 @@ html, body {
 }
 
 .app .app-container .main-area .aktion-controls {
+	display: flex;
 	margin-top: 4em;
 }
