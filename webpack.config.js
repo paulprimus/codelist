@@ -6,14 +6,14 @@ const path = require('path');
 const config = {
 	entry: {
 		codelist:'./app/app.js',
-		vendor: ['react']
+		vendor: ['react', 'bootstrap', 'redux','react-router-dom']
 	},
 	output: {
 		path: path.resolve(__dirname, 'public/js'),
 		filename: '[name].js',
 		sourceMapFilename: '[name].map',		
 	},
-	devtool: 'cheap-source-map',
+	devtool: 'inline-source-map',
 	module: {
       	rules: [		
 			{
@@ -21,7 +21,7 @@ const config = {
 				exclude: /node_modules/,
 				loader: "babel-loader",
                 query: {
-                    presets: ['es2015', 'react']
+                    presets: ['es2015', 'react'],                
                 }
 			}, 	      	
       	]      		
@@ -29,8 +29,7 @@ const config = {
 	plugins: [
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor' // Specify the common bundle's name.
-        }),
-       
+        })
     ],
 	devServer: {
   		contentBase: path.join(__dirname, 'public'),

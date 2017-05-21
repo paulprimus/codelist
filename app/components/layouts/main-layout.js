@@ -20,8 +20,9 @@ export default function(props) {
 				</div>
 				<div className="main-area">		
 					<Switch>	
-						<Route exact path={match.url} component={GruppenContainer}/>
-						<Route exact path={`${match.url}/gruppen/neu`} component={GruppeNeu}/>
+						<Route exact path="/" component={GruppenContainer}/>
+						<Route exact path="/gruppen" component={GruppenContainer}/>
+						<Route exact path="/gruppen/neu" component={GruppeNeu}/>
 					</Switch>
 				</div>
 			</div>
