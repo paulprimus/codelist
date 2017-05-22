@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 
 import  TextAreaCl from './textarea-cl';
 import  InputCl from './input-cl';
+import Dropdown from "./dropdown-cl";
 
 export default function(props) {
 	console.log("GruppenDetail");
@@ -28,19 +29,11 @@ export default function(props) {
 				        </div> 
 				        <div className="form-group">
 					        <label htmlFor="bezeichnung" className="col-xs-2 control-label">Typ:</label>                                   					        
-					        <div className="col-xs-2">
-						        <div className="dropdown">
-								    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" >
-								      Dropdown-Menü
-								     <span className="caret"></span>
-								    </button>
-								    <ul className="dropdown-menu">
-								      <li><a href="#">Dropdown-Link</a></li>
-								      <li><a href="#">Dropdown-Link</a></li>
-								    </ul>
-								</div>
+							<div className="col-xs-1">
+							<Dropdown/>						        
 							</div>
 						</div>
+							
 				        </form>
 				    </div>
 				</div>
