@@ -29,8 +29,14 @@ export default function(props) {
 				        </div> 
 				        <div className="form-group">
 					        <label htmlFor="bezeichnung" className="col-xs-2 control-label">Typ:</label>                                   					        
-							<div className="col-xs-1">
-							<Dropdown/>						        
+							<div className="col-xs-6">
+								<div className="btn-group" role="group" aria-label="...">
+								<button type="button" className="btn btn-default">Standard</button>
+								<button type="button" className="btn btn-default">Technisch</button>
+								<button type="button" className="btn btn-default">Gruppierung</button>
+								<button type="button" className="btn btn-default">Systemgruppierung</button>
+								<button type="button" className="btn btn-default">Asynchrone Attribute</button>
+								</div>				        
 							</div>
 						</div>
 							
