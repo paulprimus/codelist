@@ -46,11 +46,17 @@ html, body {
 	margin-top: 4em;
 }
 
-.app .app-container .main-area. .flex-grid {
+.app .app-container .main-area .flex-grid {
 	display: flex;
+	align-items: flex-start;
+	 justify-content: flex-start;
+
 }
 
-.app .app-container .main-area. .flex-grid .col {
-	flex: 1;
+.app .app-container .main-area .flex-grid .col {
+/*	flex: 8;*/
+	margin-right: 1em;
+	background-color: grey;
+	height: 5em;
 }
 

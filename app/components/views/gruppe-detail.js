@@ -15,11 +15,11 @@ export default function(props) {
 			<div className="header1"> Neue Gruppe erstellen </div>
 			<div>
 				<div className="flex-grid">
-					<div className= "col">
-					ID: 
+					<div className="col">
+						ID: 
 					</div>
-					<div className= "col">
-					<TextField hintText="ID Gruppe" floatingLabelText="ID Gruppe" />
+					<div className="col">
+						<TextField hintText="ID Gruppe" floatingLabelText="ID Gruppe" />
 					</div>
 				</div>
 			</div>
