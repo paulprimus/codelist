@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link, Router } from 'react-router-dom';
 
+
 export default function(props) {
 	console.log(props);
 	let gruppen = [];
@@ -10,8 +11,7 @@ export default function(props) {
 		gruppen = props.sg;
 	}
 	return (
-		<div>
-				
+		<div>				
 			<div className="header1"> Gruppen </div>
 			
 			<div>

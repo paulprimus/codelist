@@ -45,3 +45,12 @@ html, body {
 	display: flex;
 	margin-top: 4em;
 }
+
+.app .app-container .main-area. .flex-grid {
+	display: flex;
+}
+
+.app .app-container .main-area. .flex-grid .col {
+	flex: 1;
+}
+

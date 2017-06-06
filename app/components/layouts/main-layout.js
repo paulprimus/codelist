@@ -5,12 +5,14 @@ import SideBar from '../views/side-bar';
 import GruppenContainer from '../container/gruppen-container';
 import GruppeNeu from "../views/gruppe-detail";
 import { Route, Switch } from 'react-router-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 
 export default function(props) {
 	console.log("MainLayout");
 	const { match } = props;
 	return (
+		<MuiThemeProvider>
 		<div className="app">
 			<div className="my-navbar">
 			</div>
@@ -27,5 +29,7 @@ export default function(props) {
 				</div>
 			</div>
 		</div>
+		</MuiThemeProvider>
 	);
 }
+
