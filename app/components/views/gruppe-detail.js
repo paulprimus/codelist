@@ -9,6 +9,7 @@ import TextField from 'material-ui/TextField';
 import Checkbox from 'material-ui/Checkbox';
 import MenuItem from 'material-ui/MenuItem';
 import DropDownMenu from 'material-ui/DropDownMenu';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 
 export default function(props) {
@@ -16,7 +17,8 @@ export default function(props) {
 	return (
 		<div>
 			<div className="header1"> Neue Gruppe erstellen </div>
-			<div>
+			<Card>
+				<div className="formular">
 				<div className="flex-grid">
 				
 					<div className="col">
@@ -59,11 +61,12 @@ export default function(props) {
 					</div>
 				</div>
 				<div className="flex-grid">
-					<div className="col" style={{widht: 500}}>
+					<div className="col" >
 						<GruppeTypDropdown/>
 		        	</div>
         		</div>
-			</div>
+        	</div>
+			</Card>
 		</div>
 	);
 }

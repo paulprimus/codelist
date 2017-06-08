@@ -42,19 +42,26 @@ html, body {
 	margin-bottom: 2em;
 }
 
+.app .app-container .main-area .formular {
+
+	padding: 3em;
+	margin: 0 auto;
+}
+
+
 .app .app-container .main-area .aktion-controls {
 	display: flex;
 	margin-top: 4em;
 }
 
-.app .app-container .main-area .flex-grid {
+.app .app-container .main-area .formular .flex-grid {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
 
 }
 
-.app .app-container .main-area .flex-grid .col {
+.app .app-container .main-area .formular .flex-grid .col {
 	flex-basis: 5em;
 	align-self: flex-end;
 }

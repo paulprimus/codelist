@@ -6,7 +6,7 @@ const path = require('path');
 const config = {
 	entry: {
 		codelist:'./app/app.js',
-		vendor: ['react', 'bootstrap', 'redux','react-router-dom']
+		vendor: ['react', 'material-ui', 'redux','react-router-dom']
 	},
 	output: {
 		path: path.resolve(__dirname, 'public/js'),
