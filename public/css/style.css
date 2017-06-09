@@ -42,26 +42,48 @@ html, body {
 	margin-bottom: 2em;
 }
 
-.app .app-container .main-area .formular {
+.app .app-container .main-area .gruppen-panel {
 
 	padding: 3em;
-	margin: 0 auto;
+
+	width: 50em;
+	border-style: solid;
+	border-width: .1em;
+	border-color: lightgrey;
+	border-radius: 5px;
 }
 
+.app .app-container .main-area .gruppen-panel2 {
+
+	padding: 3em;
+	
+	width: 30em;
+	border-style: solid;
+	border-width: .1em;
+	border-color: lightgrey;
+	border-radius: 5px;
+}
 
 .app .app-container .main-area .aktion-controls {
 	display: flex;
 	margin-top: 4em;
 }
 
-.app .app-container .main-area .formular .flex-grid {
+.app .app-container .main-area .gruppen-panel .flex-grid-horiz {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
 
 }
 
-.app .app-container .main-area .formular .flex-grid .col {
+.app .app-container .main-area .gruppen-panel .flex-grid-vert {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;	
+}
+
+.app .app-container .main-area .gruppen-panel .flex-grid-horiz .col {
 	flex-basis: 5em;
 	align-self: flex-end;
 }

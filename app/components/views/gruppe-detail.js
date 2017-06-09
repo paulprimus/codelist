@@ -17,56 +17,41 @@ export default function(props) {
 	return (
 		<div>
 			<div className="header1"> Neue Gruppe erstellen </div>
-			<Card>
-				<div className="formular">
-				<div className="flex-grid">
+				<div className="flex-grid-horiz">	
+					<div className="gruppen-panel">
+						<div className="flex-grid-vert">
+							<div className="flex-grid-horiz">			
+								<TextField floatingLabelText="ID" style={{ width:60, marginRight:20}} />									
+								<TextField floatingLabelText="Name" style={{width:300, marginRight:10}}/>									
+							</div>
+							<TextField floatingLabelText="Bezeichnung" style={{ width:500, marginRight:10}}/>								
+							<TextField floatingLabelText="Beschreibung" rows={2} multiLine={true} style={{ width:500, marginRight:10}}/>			
+							<TextField floatingLabelText="Organisation" style={{ width:500, marginRight:10}}/>
+						</div>	
 				
-					<div className="col">
-						<TextField floatingLabelText="ID" style={{ width: 50, marginRight:2}} />
+					<div className="flex-grid-horiz">
+						<div className="col"><Checkbox label="Bearbeitbar" style={styles.checkbox}/></div>
+						<div className="col"><Checkbox label="Beendbar" style={styles.checkbox}/></div>
+						<div className="col"><Checkbox label="Bezeichnung bearbeitbar" style={styles.checkoxExtraWidth}/></div>
 					</div>
-					<div className="col">
-						<TextField floatingLabelText="Name" style={{marginRight:10}}/>
+					<div className="flex-grid-horiz">
+						<div className="col"><Checkbox label="Neuanlegbar" style={styles.checkbox}/></div>
+						<div className="col"><Checkbox label="Schluessel bearbeitbar" style={styles.checkoxExtraWidth}/></div>
+						<div className="col"><Checkbox label="Grossbuchstaben" style={styles.checkbox}/></div>
 					</div>
-					<div className="col">
-						<TextField floatingLabelText="Bezeichnung" style={{ width:400, marginRight:10}}/>
-					</div>
-				</div>
-				<div className="flex-grid">
-					<div className="col">
-						<TextField floatingLabelText="Beschreibung" rows={2} multiLine={true} style={{ width:500, marginRight:10}}/>
-					</div>
-					<div className="col">
-						<TextField floatingLabelText="Organisation" style={{ width:400, marginRight:10}}/>
-					</div>
-				</div>
-			
-				<div className="flex-grid">
-					<div className="col">
-						<Checkbox label="Bearbeitbar" style={styles.checkbox} />
-					</div>
-					<div className="col">
-						<Checkbox label="Beendbar" style={styles.checkbox} />
-					</div>
-					<div className="col">
-						<Checkbox label="Bezeichnung bearbeitbar" style={styles.checkoxExtraWidth} />
-					</div>
-					<div className="col">
-						<Checkbox label="Neuanlegbar" style={styles.checkbox} />
-					</div>
-					<div className="col">
-						<Checkbox label="Schluessel bearbeitbar" style={styles.checkoxExtraWidth} />
-					</div>
-					<div className="col">
-						<Checkbox label="Grossbuchstaben" style={styles.checkbox} />
-					</div>
-				</div>
-				<div className="flex-grid">
-					<div className="col" >
+					
+					<div className="flex-grid-horiz">			
 						<GruppeTypDropdown/>
-		        	</div>
-        		</div>
+	        		</div>
+	        	</div>
+	        	<div className="gruppen-panel2">
+	        		<div className="flex-grid-vert">
+						<div className="col"><Checkbox label="Neuanlegbar" style={styles.checkbox}/></div>
+						<div className="col"><Checkbox label="Schluessel bearbeitbar" style={styles.checkoxExtraWidth}/></div>
+						<div className="col"><Checkbox label="Grossbuchstaben" style={styles.checkbox}/></div>
+					</div>
+	        	</div>
         	</div>
-			</Card>
 		</div>
 	);
 }
