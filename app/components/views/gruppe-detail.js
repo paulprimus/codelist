@@ -2,14 +2,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import  TextAreaCl from './textarea-cl';
-import  InputCl from './input-cl';
+import TextAreaCl from './textarea-cl';
+import InputCl from './input-cl';
 import GruppeTypDropdown from "./gruppe-typ-dropdown-cl";
 import TextField from 'material-ui/TextField';
 import Checkbox from 'material-ui/Checkbox';
 import MenuItem from 'material-ui/MenuItem';
 import DropDownMenu from 'material-ui/DropDownMenu';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import Divider from 'material-ui/Divider';
+
+import {List, ListItem} from 'material-ui/List';
+import ContentInbox from 'material-ui/svg-icons/content/inbox';
+import ActionGrade from 'material-ui/svg-icons/action/grade';
+import ContentSend from 'material-ui/svg-icons/content/send';
+import ContentDrafts from 'material-ui/svg-icons/content/drafts';
+import ActionInfo from 'material-ui/svg-icons/action/info';
 
 
 export default function(props) {
@@ -17,18 +24,19 @@ export default function(props) {
 	return (
 		<div>
 			<div className="header1"> Neue Gruppe erstellen </div>
-				<div className="flex-grid-horiz">	
-					<div className="gruppen-panel">
-						<div className="flex-grid-vert">
-							<div className="flex-grid-horiz">			
-								<TextField floatingLabelText="ID" style={{ width:60, marginRight:20}} />									
-								<TextField floatingLabelText="Name" style={{width:300, marginRight:10}}/>									
-							</div>
-							<TextField floatingLabelText="Bezeichnung" style={{ width:500, marginRight:10}}/>								
-							<TextField floatingLabelText="Beschreibung" rows={2} multiLine={true} style={{ width:500, marginRight:10}}/>			
-							<TextField floatingLabelText="Organisation" style={{ width:500, marginRight:10}}/>
-						</div>	
-				
+			<div className="flex-grid-horiz">	
+				<div className="gruppen-panel">
+					<div className="flex-grid-vert">
+						<div className="flex-grid-horiz">			
+							<TextField floatingLabelText="ID" style={{ width:60, marginRight:20}} />									
+							<TextField floatingLabelText="Name" style={{width:300, marginRight:10}}/>									
+						</div>
+						<TextField floatingLabelText="Bezeichnung" style={{ width:500, marginRight:10}}/>								
+						<TextField floatingLabelText="Beschreibung" rows={2} multiLine={true} style={{ width:500, marginRight:10}}/>			
+					
+						<TextField floatingLabelText="Organisation" style={{ width:500, marginRight:10}}/>
+					</div>	
+								
 					<div className="flex-grid-horiz">
 						<div className="col"><Checkbox label="Bearbeitbar" style={styles.checkbox}/></div>
 						<div className="col"><Checkbox label="Beendbar" style={styles.checkbox}/></div>
@@ -39,19 +47,22 @@ export default function(props) {
 						<div className="col"><Checkbox label="Schluessel bearbeitbar" style={styles.checkoxExtraWidth}/></div>
 						<div className="col"><Checkbox label="Grossbuchstaben" style={styles.checkbox}/></div>
 					</div>
-					
 					<div className="flex-grid-horiz">			
 						<GruppeTypDropdown/>
 	        		</div>
-	        	</div>
-	        	<div className="gruppen-panel2">
+        		</div>
+	        	<div className="gruppen-system-panel">
 	        		<div className="flex-grid-vert">
-						<div className="col"><Checkbox label="Neuanlegbar" style={styles.checkbox}/></div>
-						<div className="col"><Checkbox label="Schluessel bearbeitbar" style={styles.checkoxExtraWidth}/></div>
-						<div className="col"><Checkbox label="Grossbuchstaben" style={styles.checkbox}/></div>
+						<List>
+							<ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+							<ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
+							<ListItem primaryText="Sent mail" leftIcon={<ContentSend />} />
+							<ListItem primaryText="Drafts" leftIcon={<ContentDrafts />} />
+							<ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+    					</List>
 					</div>
 	        	</div>
-        	</div>
+    		</div>
 		</div>
 	);
 }
