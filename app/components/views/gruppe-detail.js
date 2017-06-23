@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import TextAreaCl from './textarea-cl';
 import InputCl from './input-cl';
 import GruppeTypDropdown from "./gruppe-typ-dropdown-cl";
+import SystemGruppen from './system-gruppen';
 import TextField from 'material-ui/TextField';
 import Checkbox from 'material-ui/Checkbox';
 import MenuItem from 'material-ui/MenuItem';
@@ -52,15 +53,7 @@ export default function(props) {
 	        		</div>
         		</div>
 	        	<div className="gruppen-system-panel">
-	        		<div className="flex-grid-vert">
-						<List>
-							<ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
-							<ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
-							<ListItem primaryText="Sent mail" leftIcon={<ContentSend />} />
-							<ListItem primaryText="Drafts" leftIcon={<ContentDrafts />} />
-							<ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
-    					</List>
-					</div>
+	        		<SystemGruppen/>
 	        	</div>
     		</div>
 		</div>
