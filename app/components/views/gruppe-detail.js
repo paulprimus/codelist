@@ -11,13 +11,8 @@ import Checkbox from 'material-ui/Checkbox';
 import MenuItem from 'material-ui/MenuItem';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import Divider from 'material-ui/Divider';
+import RaisedButton from 'material-ui/RaisedButton';
 
-import {List, ListItem} from 'material-ui/List';
-import ContentInbox from 'material-ui/svg-icons/content/inbox';
-import ActionGrade from 'material-ui/svg-icons/action/grade';
-import ContentSend from 'material-ui/svg-icons/content/send';
-import ContentDrafts from 'material-ui/svg-icons/content/drafts';
-import ActionInfo from 'material-ui/svg-icons/action/info';
 
 
 export default function(props) {
@@ -25,6 +20,8 @@ export default function(props) {
 	return (
 		<div>
 			<div className="header1"> Neue Gruppe erstellen </div>
+			
+			<div className="flex-grid-vert">	
 			<div className="flex-grid-horiz">	
 				<div className="gruppen-panel">
 					<div className="flex-grid-vert">
@@ -55,6 +52,12 @@ export default function(props) {
 	        	<div className="gruppen-system-panel">
 	        		<SystemGruppen/>
 	        	</div>
+    		</div>
+        	
+        	<div className="flex-grid-horiz" style={{marginTop:20}}>	
+        		<div className="col"><RaisedButton primary={true} label="Speichern"/></div>
+        	</div>
+    		
     		</div>
 		</div>
 	);

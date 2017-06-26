@@ -29,26 +29,22 @@ html, body {
 	width: 15%;
 	padding: 1%;
 	margin-top: 3%;
-	/*background-color: #FFC107; */
 }
 .app  .app-container .main-area {
 	width: 85%;
 	padding: 2%;
 }
-
 .app .app-container .main-area .header1 {
 	text-align: center;
 	font-size: 2em;
 	margin-bottom: 2em;
 }
-
 .app .app-container .main-area .flex-grid-horiz {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 
 }
-
 .app .app-container .main-area .gruppen-panel {
 	padding: 3em;
 	width: 50em;
@@ -75,6 +71,8 @@ html, body {
 
 .app .app-container .main-area .gruppen-panel .flex-grid-horiz {
 	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
 	align-items: flex-start;
 	justify-content: flex-start;
 
@@ -82,13 +80,13 @@ html, body {
 
 .app .app-container .main-area .gruppen-panel .flex-grid-vert {
 	display: flex;
-	align-items: flex-start;
+	align-items: flex-start;	
 	justify-content: flex-start;
 	flex-direction: column;	
 }
 
 .app .app-container .main-area .gruppen-panel .flex-grid-horiz .col {
-	flex-basis: 5em;
-	align-self: flex-end;
+	/*flex-basis: 5em;*/
+	/*align-self: flex-end;*/
 }
 
